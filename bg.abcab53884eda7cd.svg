@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 218.73 388.85">
+  <defs>
+    <style>.cls-1,.cls-2{fill:none;}.cls-3{fill:url(#linear-gradient);}.cls-4{clip-path:url(#clippath);}.cls-5{fill:#f2f2f4;}.cls-6{fill:#57b952;}.cls-7{clip-path:url(#clippath-1);}.cls-2{opacity:.15;stroke:#f2f2f4;stroke-miterlimit:10;stroke-width:1.79px;}</style>
+    <clipPath id="clippath">
+      <rect class="cls-1" width="218.73" height="388.85" transform="translate(218.73 388.85) rotate(180)"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="473.98" y1="-1001.13" x2="675.38" y2="-821.34" gradientTransform="translate(679.63 -751.04) rotate(-177.43)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#339ce9"/>
+      <stop offset="1" stop-color="#1d5bdf"/>
+    </linearGradient>
+    <clipPath id="clippath-1">
+      <rect class="cls-1" width="218.73" height="388.85" rx="3.97" ry="3.97" transform="translate(218.73 388.85) rotate(180)"/>
+    </clipPath>
+  </defs>
+  <g id="OBJECTS">
+    <rect class="cls-5" width="218.73" height="388.85"/>
+    <g class="cls-4">
+      <path class="cls-6" d="M324.59,130.31c-3.83,7.03-46.02,84.41-107.83,112.38-61.81,27.97-94.66,87.21-109.31,146.05-14.66,58.84-171.44,63.05-171.44,63.05L-12.39-94.19,332.59-47.5l-8,177.81Z"/>
+      <path class="cls-3" d="M298.01,43.13c-2.24,4.63-11.05,39.05-131.13,137.86-120.08,98.81-115.23,192.09-115.39,240.76s-118.11,.52-118.11,.52L-44.88-62.17l352.31,15.81-9.42,89.49Z"/>
+    </g>
+    <g class="cls-7">
+      <path class="cls-2" d="M230.51-55.19s-22.96,78.34-92.53,96.58C68.41,59.63-6.55,90.69-26.82,190.99"/>
+      <path class="cls-2" d="M19.2,440.23S1.82,199.67,278.37,89.72"/>
+    </g>
+  </g>
+</svg>
