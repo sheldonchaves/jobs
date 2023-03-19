@@ -5,8 +5,8 @@ on:
     branches:
       - main
 env:
-  repoName: "jobs"
-  githubUser: "sheldonchaves"
+  - repoName: "jobs"
+  - githubUser: "sheldonchaves"
 
 jobs:
   build-and-deploy:
