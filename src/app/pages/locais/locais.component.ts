@@ -1,14 +1,13 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Router } from '@angular/router';
 import { MessageService } from 'primeng/api';
 
 @Component({
-  selector: 'app-vaga',
-  templateUrl: './vaga.component.html',
-  styleUrls: ['./vaga.component.scss']
+  selector: 'app-locais',
+  templateUrl: './locais.component.html',
+  styleUrls: ['./locais.component.scss']
 })
-export class VagaComponent {
-
+export class LocaisComponent {
   constructor( private router: Router, private messageService: MessageService) {
   }
 
@@ -18,4 +17,3 @@ export class VagaComponent {
   }
 
 }
-

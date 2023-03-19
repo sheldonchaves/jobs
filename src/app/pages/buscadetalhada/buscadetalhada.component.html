@@ -1,0 +1,89 @@
+<app-header></app-header>
+<!-- <img class="full-svg" src="assets/busca.svg"> -->
+
+<div class="row mt-5 pt-3">
+  <div class="col-1"></div>
+  <div class="col-10">
+    <input
+      [(ngModel)]="filterSearch"
+      (ngModelChange)="searchData($event)"
+      class="form-control form-control-lg shadow"
+      type="text"
+      placeholder="digite aqui sua profissão"
+    />
+  </div>
+</div>
+<div class="row">
+  <div class="col-1"></div>
+  <div class="col-10">
+    <select class="form-select form-select-sm">
+      <option value="1" selected>Fortaleza</option>
+      <option value="2">Eusébio</option>
+    </select>
+    <select class="form-select form-select-sm">
+      <option value="1" selected>R$ 1.800,00 a R$ 3.200,00</option>
+    </select>
+    <select class="form-select form-select-sm">
+      <option value="1" selected>Até 5km da minha casa</option>
+    </select>
+    <select class="form-select form-select-sm">
+      <option value="1" selected>Carteira assinada</option>
+    </select>
+    <select class="form-select form-select-sm">
+      <option value="1" selected>Trabalho remoto</option>
+    </select>
+    <select class="form-select form-select-sm">
+      <option value="1" selected>Benefícios...</option>
+    </select>
+  </div>
+</div>
+
+<div class="result" *ngIf="filteredData.length > 0">
+  <div class="row mt-1 mb-1">
+    <div class="result-length">
+      <div class="text">
+        Foram encontradas {{ filteredData.length }} vaga(s):
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="item"
+    *ngFor="let item of filteredData"
+    [routerLink]="['/oferta']"
+  >
+    <div class="row">
+      <div class="col-9">
+        <div class="title">
+          {{ item.title }}
+        </div>
+      </div>
+      <div class="col-3 text-right">
+        <div class="total text-green">
+          {{ getTotal() }}
+        </div>
+        <i class="fa fa-chevron-right text-orange" aria-hidden="true"></i>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="result" *ngIf="filteredData.length == 0">
+  <div class="item">Nenhum resultado</div>
+</div>
+
+<div class="row mt-3 mb-3">
+  <div class="col-1"></div>
+  <div class="col-7">
+    <button
+      [routerLink]="['/busca']"
+      type="button"
+      class="btn btn-sm btn-light btn-block shadow"
+    >
+      Busca simples
+    </button>
+  </div>
+
+  <div class="col-5"></div>
+  <div class="col-2"></div>
+</div>

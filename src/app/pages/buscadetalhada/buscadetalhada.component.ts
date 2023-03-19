@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-busca',
-  templateUrl: './busca.component.html',
-  styleUrls: ['./busca.component.scss'],
+  selector: 'app-buscadetalhada',
+  templateUrl: './buscadetalhada.component.html',
+  styleUrls: ['./buscadetalhada.component.scss']
 })
-export class BuscaComponent {
+export class BuscadetalhadaComponent {
 
   filterSearch:any;
   filteredData: any[] = [];

@@ -17,6 +17,9 @@ import {
   group,
 } from '@angular/animations';
 
+import { MessageService } from 'primeng/api';
+import { PrimeNGConfig } from 'primeng/api';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -55,5 +58,5 @@ import {
   ],
 })
 export class AppComponent {
-  constructor(private contexts: ChildrenOutletContexts) {}
+  constructor(private contexts: ChildrenOutletContexts, private messageService: MessageService, private primengConfig: PrimeNGConfig) {}
 }

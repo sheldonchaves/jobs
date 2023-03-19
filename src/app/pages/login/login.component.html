@@ -1,9 +1,54 @@
-<img class="full-svg" src="assets/login.svg">
+<!-- <img class="full-svg" src="assets/login.svg" /> -->
 
-<div class="top-btn" [routerLink]="['/home']">
 
+
+<div class="row mt-5" [routerLink]="['/home']">
+  <div class="title">
+    <i class="fa fa-chevron-left" aria-hidden="true" ></i>
+    <div class="text">Bem vindo de volta</div>
+  </div>
 </div>
 
-<div class="down-btn" [routerLink]="['/index']">
+<div class="row">
+  <div class="col">
+    <div class="user-icon shadow">
+      <i class="fa fa-user" aria-hidden="true"></i>
+    </div>
+  </div>
+</div>
 
+<div class="row">
+  <div class="col-1"></div>
+  <div class="col-10">
+    <input
+      class="form-control shadow"
+      type="text"
+      placeholder="teresa.santos@gmail.com"
+    />
+  </div>
+</div>
+<div class="row mt-4">
+  <div class="col-1"></div>
+  <div class="col-10">
+    <input class="form-control shadow" type="password" placeholder="lhjhlkljhlkj" />
+  </div>
+</div>
+<div class="row mt-2">
+  <div class="col-12 esqueceu">Esqueceu a senha?</div>
+</div>
+
+<div class="row mt-5">
+  <div class="col-2"></div>
+  <div class="col-8">
+    <button [routerLink]="['/index']" type="button" class="btn btn-lg btn-warning btn-block shadow">Entrar</button>
+  </div>
+  <div class="col-2"></div>
+</div>
+
+<div class="row mt-3">
+  <div class="col-2"></div>
+  <div class="col-8">
+    <button type="button" class="btn btn-sm btn-light btn-block shadow">Quero me cadastrar</button>
+  </div>
+  <div class="col-2"></div>
 </div>

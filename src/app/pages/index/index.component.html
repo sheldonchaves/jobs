@@ -1,19 +1,82 @@
 <app-header></app-header>
 
-<img class="full-svg" src="assets/index.svg">
 
-<div class="top30-btn" [routerLink]="['/busca']">
 
+<div class="row mt-5" [routerLink]="['/home']">
+  <div class="title">
+    <div class="text">Vagas em destaque</div>
+  </div>
 </div>
 
-<div class="md1-btn" [routerLink]="['/busca']">
-
+<div class="vagas p-2">
+  <div class="vaga shadow" *ngFor="let item of vagas" [routerLink]="['/vaga']">
+    <i class="{{ item.icon }} " aria-hidden="true"></i>
+    <div class="title">
+      {{ item.title }}
+    </div>
+    <div class="total">
+      {{ item.total }}
+    </div>
+    <div class="txt">vagas</div>
+  </div>
 </div>
 
-<div class="md2-btn" [routerLink]="['/perfil']">
+<div class="row mt-3">
+  <div class="col-1"></div>
+  <div class="col-5">
+    <button
+      [routerLink]="['/busca']"
+      type="button"
+      class="btn btn-sm btn-light btn-block shadow"
+    >
+      Busca
+    </button>
+  </div>
 
+  <div class="col-5">
+    <button
+      [routerLink]="['/busca']"
+      type="button"
+      class="btn btn-sm btn-light btn-block shadow"
+    >
+      Busca detalhada
+    </button>
+  </div>
+  <div class="col-2"></div>
 </div>
 
-<div class="md3-btn" [routerLink]="['/conta']">
+<div class="row mt-5">
+  <div class="title-2">
+    <div class="text">Navegação rápida</div>
+  </div>
+</div>
 
+<div class="row mt-3">
+  <div class="col-1"></div>
+  <div class="col-3">
+    <div class="nav-item shadow" [routerLink]="['/ofertas']">
+      <i class="fa fa-paper-plane" aria-hidden="true"></i>
+      <div class="title">Minhas ofertas</div>
+    </div>
+  </div>
+  <div class="col-3">
+    <div class="nav-item shadow" [routerLink]="['/perfil']">
+      <i class="fa fa-user" aria-hidden="true"></i>
+      <div class="title">Meu perfil</div>
+    </div>
+  </div>
+  <div class="col-3">
+    <div class="nav-item shadow" [routerLink]="['/conta']">
+      <i class="fa fa-cog" aria-hidden="true"></i>
+      <div class="title">Configurações</div>
+    </div>
+  </div>
+</div>
+
+<div class="row mt-3">
+  <div class="col-1"></div>
+  <div class="col-10">
+    <img class="full-svg " src="assets/banner1.svg" />
+  </div>
+  <div class="col-1"></div>
 </div>

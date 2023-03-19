@@ -4,7 +4,9 @@
     <div class="col-3" (click)="back()">
       <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
     </div>
-    <div class="col-6"></div>
+    <div class="col-6" [routerLink]="['/index']">
+      <i class="fa fa-home fa-2x" aria-hidden="true"></i>
+    </div>
     <div class="col-3" [routerLink]="['/perfil']">
       <i class="fa fa-user fa-2x" aria-hidden="true"></i>
     </div>

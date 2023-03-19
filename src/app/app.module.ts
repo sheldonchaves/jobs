@@ -15,6 +15,13 @@ import { VagaComponent } from './pages/vaga/vaga.component';
 import { OfertaComponent } from './pages/oferta/oferta.component';
 import { HeaderComponent } from './comps/header/header.component';
 
+import { ConfirmDialogModule } from 'primeng/confirmdialog';
+import { ToastModule } from 'primeng/toast';
+import { FormsModule } from '@angular/forms';
+import { MessageService } from 'primeng/api';
+import { BuscadetalhadaComponent } from './pages/buscadetalhada/buscadetalhada.component';
+import { LocaisComponent } from './pages/locais/locais.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,13 +35,18 @@ import { HeaderComponent } from './comps/header/header.component';
     VagaComponent,
     OfertaComponent,
     HeaderComponent,
+    BuscadetalhadaComponent,
+    LocaisComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    ToastModule,
+    FormsModule,
+    ConfirmDialogModule,
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [MessageService],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
